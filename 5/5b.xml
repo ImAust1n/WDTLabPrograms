@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet href="5b.xsl" type="text/xsl" ?>
+
+<students>
+    <student>
+        <name>Name: Akash Kumar Gupta</name>
+        <usn>USN: 1NH23CD008</usn>
+        <sem>SEM: 3rd</sem>
+    </student>
+</students>

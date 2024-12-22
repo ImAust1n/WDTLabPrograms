@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery Serailize</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('div').text($('form').serialize());
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="">
+        First Name: <input type="text" name="fname" value="Vladimir"><br><br>
+        Last Name: <input type="text" name="lname" value="Putin"><br><br>
+    </form>
+    <button>Serialize</button>
+    <div></div>
+</body>
+</html>

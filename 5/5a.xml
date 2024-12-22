@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="5a.css"?>
+<html>
+    <body>
+        <students>
+            <student>
+                <name>Akash</name>
+                <usn>1NH23CD008</usn>
+                <sem>3rd</sem>
+            </student>
+
+            <student>
+                <name>Aditya</name>
+                <usn>1NH23CD009</usn>
+                <sem>3rd</sem>
+            </student>
+
+            <student>
+                <name>Samarth</name>
+                <usn>1NH23CD010</usn>
+                <sem>3rd</sem>
+            </student>
+        </students>
+    </body>
+</html>

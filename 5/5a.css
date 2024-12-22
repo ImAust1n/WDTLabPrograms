@@ -1,0 +1,24 @@
+students {
+    display: block;
+    color: red;
+}
+
+student {
+    margin-left: 10px;
+    display: block;
+}
+
+name {
+    color: green;
+    display: block;
+}
+
+usn {
+    margin-left: 20px;
+    display: block;
+}
+
+sem {
+    margin-left: 20px;
+    display: block;
+}

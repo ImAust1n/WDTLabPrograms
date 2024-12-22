@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+</head>
+<body bgcolor="skyblue">
+    <header><h1>User Registration Form</h1></header>
+
+    <section>
+        <form action="action.php">
+            Username: <input type="text" name="username"><br><br>
+            Password: <input type="password" name="pswd"><br><br>
+            Email: <input type="email" name="email"><br><br>
+            Blogspot URL: <input type="url" name="url"><br><br>
+            Ph No.: <input type="number" name="phno" min="4000000000" max="9999999999"><br><br>
+            CGPA: <input type="range" name="cgpa"><br><br>
+            Login Time: <input type="time" name="time"><br><br>
+            <input type="submit" value="Register"><input type="reset" value="Clear">
+        </form>
+    </section>
+
+    <section>
+        <article>
+            <h2>Acedamic Activities</h2>
+            <p>Internal and External Exams</p>
+        </article>
+
+        <article>
+            <h2>Co-curricular Events</h2>
+            <p>Sports Event</p>
+        </article>
+
+        <article>
+            <h2>Cultral Events</h2>
+            <p>Sargam</p>
+        </article>
+    </section>
+
+    <aside style="float: right; color: green;">
+        <h3>Author</h3>
+        <p>Welcomes everyone!</p>
+    </aside>
+
+    <section>
+        <audio controls>
+            <source src="bells.mp3" type="audio/mp3">
+            Your Browser doesn't Support Audio Tag.
+        </audio>
+
+        <video width="320" height="100" controls>
+            <source src="test.mp4" type="video/mp4">
+            Your Browser doesn't Support Video Tag.
+        </video>
+
+        <canvas width="200" height="100" id="myCanvas" style="border: solid thick #d3d3d3;">
+            Your Browser doesn't Support Canvas Tag.
+        </canvas>
+    </section>
+
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContext('2d');
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+    </script>
+
+    <footer>
+        <p>Copyright 2024 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

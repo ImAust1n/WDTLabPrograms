@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Book Repository</title>
+</head>
+<body>
+    <h1>CSE BOOK REPOSITORY!</h1>
+    Enter Book ID: <input type="text" id="bid" name="bid"><br><br>
+    <button onclick="details()">Retrieve Details</button>
+    <div id="result"></div>
+
+    <script>
+        function details() {
+            var id = document.getElementById('bid').value;
+            display(info(id));
+        }
+
+        function info(id) {
+            if (id == 1) {
+                return {
+                    title: "A Brief History of Time",
+                    author: "Stefan Hawkings",
+                    description: "It takes about space and the Big Bang Theory and Time Relativity Theory"
+                };
+            } else {
+                return {
+                    title: "Book Not Found!",
+                    author: "N / A",
+                    description: "N / A"
+                };
+            }
+        }
+
+        function display(things) {
+            var container = document.getElementById('result');
+            container.innerHTML = "<h2>Title</h2><p>" + things.title +" </p><br><br><h2>Author</h2><p>"+ things.author +"</p><br><br><h2>Description</h2><p>"+ things.description +"</p><br><br>";
+        }
+    </script>
+</body>
+</html>

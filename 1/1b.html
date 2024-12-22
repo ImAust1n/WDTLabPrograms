@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <script>
+        function total(num) {
+            var n = Number(num);
+            var price = n * 100;
+            document.getElementById("total").value = price;
+        }
+    </script>
+</head>
+<body bgcolor="skyblue">
+    <center>
+        <marquee><h1 style="color: red;">Welcome to <font color="red">"PVR Ticket Booking"</font></h1></marquee>
+        <h2 style="color: green;">Bill Particulars</h2>
+        Number of Tickets: <input type="number" name="num" id="num"><br><br>
+        <button onclick="total(num.value);">Total Amount</button> <input type="text" name="total" id="total">
+        <p>BigTree Entertainments Pvt. Ltd.</p>
+    </center>
+</body>
+</html>

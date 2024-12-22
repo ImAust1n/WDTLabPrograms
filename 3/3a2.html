@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number and their Squares</title>
+</head>
+<body>
+    <script>
+        var n = window.prompt("Enter the limit: ");
+
+        if (n > 0) {
+            document.write("<table border='1'>");
+            document.write("<tr><th>Number</th><th>Square</th></tr>");
+            for (var i = 1; i <= n; i++) {
+                document.write("<tr><td>"+ i +"</td><td>"+ i * i +"</td></tr>");
+            }
+            document.write("</table>");
+        }
+    </script>
+</body>
+</html>

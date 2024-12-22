@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabonacci Series</title>
+</head>
+<body>
+    <script>
+        var fib1 = 0, fib2 = 1, fib = 0;
+        var n = prompt("Enter a Number");
+
+        if (n > 0) {
+            if (n == 1) {
+                document.write("Fabonacci Series: " + fib1);
+            } else {
+                document.write("Fabonacci Series: " + fib1 + ", " + fib2 + ", ");
+
+                for (var i = 3; i <= n; i++) {
+                    fib = fib1 + fib2;
+                    document.write(fib + ", ");
+                    fib1 = fib2;
+                    fib2 = fib;
+                }
+            }
+        } else {
+            alert("Enter correct Number!");
+        }
+        
+    </script>
+</body>
+</html>
